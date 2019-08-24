@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>FuelSystem/FuelPumpRelay</title>
+<link rel="stylesheet" type="text/css" media="all" charset="utf-8" href="modern/css/common.css">
+<link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="modern/css/screen.css">
+<link rel="stylesheet" type="text/css" media="print" charset="utf-8" href="modern/css/print.css">
+<style type="text/css">
+ul.pagetitle{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+li.pagetitle{
+  display: inline;
+  margin: 0;
+}
+td.noborder {
+  border: 0;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td class="noborder">
+<img src="logo.png">
+</td>
+<td class="noborder">
+<ul class="pagetitle">
+<li class="pagetitle"><a class="backlink">FuelSystem/FuelPumpRelay</a>
+</ul>
+<br><br>
+[<a href="FrontPage.html">FrontPage</a>]&nbsp;[<a href="TitleIndex.html">TitleIndex</a>]&nbsp;
+</td>
+</tr>
+</table>
+<hr>
+<div id="page">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<p class="line867">
+<h2 id="Fuel_Pump_Relay">Fuel Pump Relay</h2>
+<p class="line862">A fairly comprehensive description of the 1983 V4 Magna FUEL CUT-OUT RELAY: <a class="attachment" href="attachments/FuelSystem(2f)FuelPumpRelay/V4%20Magna%20FUEL%20CUT-OUT.pdf" title="">V4 Magna FUEL CUT-OUT.pdf</a> <p class="line867">
+<h3 id="Overview_.28per_Bob_Peloquin.29">Overview (per Bob Peloquin)</h3>
+<p class="line874">The fuel pump relay isn't really a relay at all.  It's a time-delay circuit which detects ignition pulses and turns on the power to the fuel pump, cutting power if the engine should stall (a safety feature). <p class="line874">The 3 wires at the relay are un-fused ignition-switched power (black), Ignition pulse in (blue) and fuel pump out (white). <p class="line862">The fuel pump relay should apply 12 volts to the white wire whenever there are ignition pulses coming in on the blue wire.  If the black wire is dead with the ignition on, check the <a href="./MainFuseMod.html">main fuse</a>... <p class="line874">Connecting the sabmag fuel pump backward will definitely destroy it.  There's a diode inside which clamps the reverse pulse of electricity caused when the solenoid's magnetic field collapses.  This diode usually shorts if power is reversed and welds itself closed rendering the pump useless.  It "may" be possible to remove and replace the diode, but I think it's built into the coil as I recall.  No, you can't cut the diode out as it will then destroy the fuel pump cutout relay.  Big oops!!! <p class="line874">Notes: Relay is sometimes referred to as the "fuel-cut relay". <p class="line867">
+<h3 id="Update_.28per_Scott_McMillan.2C_based_on_advice_from_Tom_Bowers.29">Update (per Scott McMillan, based on advice from Tom Bowers)</h3>
+<p class="line874">Agreed, connecting the pump backwards will destroy the diode. BTDT (twice)!  <p class="line862">On <em><strong>V30s</strong></em>, the diode is accessible under the plastic cap with the points. It is covered in heat-shrink tubing and soldered between the Black/Blue and Black wires. <p class="line874">With a little soldering, it can be removed and replaced with a 1N4001 or 1N4002 diode. Mine fell completely apart when I removed the tubing leaving me guessing which wire to solder the banded end to. Yup, my guess was wrong the first attempt as evidenced by the wisp of smoke when I powered it up. For reference, the banded end should be soldered to the Black/Blue wire and covered in heat-shrink tubing again once you're done. (Note: the pic below was my first attempt and is wired backwards! The diode's band should be on the other end.) <div><table><tbody><tr>  <td><p class="line891"><img alt="Remains of the old diode" class="attachment" src="attachments/FuelSystem(2f)FuelPumpRelay/Old_Diode.jpg" title="Remains of the old diode" /></td>
+  <td><p class="line891"><img alt="New diode - wired BACKWARDS in this pic.The band should be on the other end!" class="attachment" src="attachments/FuelSystem(2f)FuelPumpRelay/New_Diode.jpg" title="New diode - wired BACKWARDS in this pic.The band should be on the other end!" /></td>
+</tr>
+</tbody></table></div><p class="line867">
+<h3 id="Aftermarket_Replacement">Aftermarket Replacement</h3>
+<p class="line874">It has been reported that the fuel cut relay NAPA part #: ECH AR355 ($23.99) can be used.  Relay current used in Kawasaki, Lexus, Mitsubishi, Subaru as well as Honda. <span class="anchor" id="bottom"></span></div>
+</div>
+<hr>
+
+</body>
+</html>

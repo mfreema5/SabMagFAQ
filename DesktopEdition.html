@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>DesktopEdition</title>
+<link rel="stylesheet" type="text/css" media="all" charset="utf-8" href="modern/css/common.css">
+<link rel="stylesheet" type="text/css" media="screen" charset="utf-8" href="modern/css/screen.css">
+<link rel="stylesheet" type="text/css" media="print" charset="utf-8" href="modern/css/print.css">
+<style type="text/css">
+ul.pagetitle{
+  display: inline;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
+}
+li.pagetitle{
+  display: inline;
+  margin: 0;
+}
+td.noborder {
+  border: 0;
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<td class="noborder">
+<img src="logo.png">
+</td>
+<td class="noborder">
+<ul class="pagetitle">
+<li class="pagetitle"><a class="backlink">DesktopEdition</a>
+</ul>
+<br><br>
+[<a href="FrontPage.html">FrontPage</a>]&nbsp;[<a href="TitleIndex.html">TitleIndex</a>]&nbsp;
+</td>
+</tr>
+</table>
+<hr>
+<div id="page">
+<div dir="ltr" id="content" lang="en"><span class="anchor" id="top"></span>
+<p class="line867"><a href="./MoinMoin.html">MoinMoin</a> <em>DesktopEdition</em> is the easiest way to run moin, without much installation and without separate server software (this is why its built-in server is also called the <em>standalone server</em>). <p class="line874">It is intended as a local personal information manager. <p class="line867">
+<h2 id="Installation">Installation</h2>
+<ul><li><p class="line862">if you don't already have Python installed (Linux systems often have it by default, Mac OS X also, Windows usually needs manual installation), get it from <a class="http" href="http://python.org/">http://python.org/</a> </li><li><p class="line862">download the moin distribution archive from <a class="interwiki" href="http://moinmo.in/MoinMoinDownload" title="MoinMoin">MoinMoinDownload</a> </li><li>unpack it (will give some moin-1.x.x directory) </li></ul><p class="line874">If you prefer to work with a repository checkout instead of a release archive, the procedure is like above, but you additionally have to unpack the underlay pages: <ul><li><p class="line891"><tt class="backtick">cd&nbsp;moin-1.x.x/wiki</tt> </li><li><p class="line891"><tt class="backtick">tar&nbsp;xf&nbsp;underlay.tar</tt> </li></ul><p class="line867">
+<h2 id="Running">Running</h2>
+<ul><li><p class="line891"><tt class="backtick">cd&nbsp;moin-1.x.x</tt> </li><li><p class="line891"><tt class="backtick">./wikiserver.py</tt> (or click on <tt class="backtick">wikiserver.py</tt>) </li><li><p class="line862">now a fresh moin wiki will run on <a class="http" href="http://localhost:8080/">http://localhost:8080/</a> <img alt=":)" height="15" src="/moin_static1910/modern/img/smile.png" title=":)" width="15" /> </li><li>you can terminate the wiki server either by using Ctrl-C or closing the window </li></ul><p class="line867">
+<h2 id="Wiki_Server_Configuration">Wiki Server Configuration</h2>
+<p class="line862">If you need to use a configuration different from the standard configuration you can edit the <tt class="backtick">wikiserverconfig.py</tt> in the toplevel directory, see the comments there. <p class="line867"><img alt="(!)" height="15" src="/moin_static1910/modern/img/idea.png" title="(!)" width="15" /> By default, moin only listens on the localhost interface. Before opening it to a wider audience, please check if the security settings of moin are what you want. Especially the <tt class="backtick">DesktopEdition</tt> and <tt class="backtick">acl_rights_*</tt> settings might need changes if you don't use it for personal use and on localhost only. <p class="line867">
+<h2 id="Wiki_Server_Logging_Configuration">Wiki Server Logging Configuration</h2>
+<p class="line862">See <tt class="backtick">wikiserverlogging.conf</tt>. <p class="line867"><img alt="(!)" height="15" src="/moin_static1910/modern/img/idea.png" title="(!)" width="15" /> You maybe usually don't want to change that, but you <em>can</em> - e.g. if you like to have more log output for debugging. <p class="line867">
+<h2 id="Wiki_Configuration">Wiki Configuration</h2>
+<p class="line862">See the <tt class="backtick">wikiconfig.py</tt> in the toplevel directory. <a href="./HelpOnConfiguration.html">HelpOnConfiguration</a> lists the configuration options. You maybe also want to look at the sample config in the <tt class="backtick">wiki/config/</tt> directory. <p class="line862">See also: <a href="./HelpOnInstalling(2f)StandaloneServer.html">HelpOnInstalling/StandaloneServer</a> <span class="anchor" id="bottom"></span></div>
+</div>
+<hr>
+
+</body>
+</html>
